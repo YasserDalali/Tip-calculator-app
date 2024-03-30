@@ -114,17 +114,22 @@ justify-content: space-between;}
     margin-bottom: 3rem;
 }
 
-input[type='button'] {
+button[type='reset'] {
+    font-size: larger;
+    margin-bottom: 0rem ;
+    border: 0;
+    border-radius: 10px;
+    padding: .8rem;
+    width: 100%;
     background-color: #19979d;
-    margin-bottom: 0;
     font-size: 1.7rem;
     font-weight: bolder;
     text-transform: uppercase;
     opacity: 40%;
 }
 
-input[type='button']:hover {
-    background-color: #19979d;
+button[type='reset']:hover {
+    background-color: #c5e4e7;
     scale: 1.05;
     opacity: 100%;
     transition: 100ms ease-in-out;
