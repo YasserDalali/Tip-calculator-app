@@ -153,3 +153,33 @@ button[type='reset']:hover {
     .left {width: 100%;}
 
 }
+
+@media screen and (max-width: 600px) {
+
+    .boxmain {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .container-grid {
+    
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    }
+        .boxmain {
+            display: flex;
+            flex-direction: column;
+        }
+        .right {width: 100%;}
+        .left {width: 100%;}
+        
+
+        .row-calc {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 3rem;
+        }
+
+    }
