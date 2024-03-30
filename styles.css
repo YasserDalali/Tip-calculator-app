@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c5e4e7;
+    font-family: Kode Mono;
+}   
+
+.boxmain {
+background-color: white;
+border-radius: 1rem; padding: 1.5rem;
+display: flex;
+width: 60vw;
+margin: 5rem auto;
+}
+
+.right {
+    width: 50%; 
+    background-color: #00474b; 
+    border-radius: 1rem;}
+.left {
+    padding: 1rem;
+    margin-right: 1rem;
+    width: 50%;
+}
+
+
+/**------------------========================---------------------*/
+
+input {
+    font-size: larger;
+    margin-bottom: 2rem ;
+    background-color: #f3f8fb;
+    border: 0;
+    border-radius: 10px;
+    padding: .8rem;
+    width: 100%;
+}
+
+input:focus  {
+    outline: none;
+}
+
+label {
+    margin-top: 2rem;
+    color: #00474b;
+    font-size: larger;
+}
+
+/**------------------========================---------------------*/
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 100px 100px;
+}
+
+
+
+.item {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 1rem;
+    background-color: #00474b;
+    color: white;
+}
+
+.item:hover {
+    background-color: #006369;
+    transition: 100ms ease-in-out;
+    scale: 1.05;
+}
+.custom {
+    background-color: #f3f8fb;
+    color: #00474b;
+
+}
+.custom:hover {
+    background-color: #005a5e;
+    color: white;
+
+}
+/**------------------========================---------------------*/
+
+.totallabel {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: larger;
+}
+.totallabel > small {
+    color: #26beaa;
+}
+
+.totaldigits {     color: #26beaa;
+font-size: 2.7rem;
+font-weight: bolder;}
+
+.right {padding: 4rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;}
+
+.row-calc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+input[type='button'] {
+    background-color: #19979d;
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    opacity: 40%;
+}
+
+input[type='button']:hover {
+    background-color: #19979d;
+    scale: 1.05;
+    opacity: 100%;
+    transition: 100ms ease-in-out;
+}
+/**------------------========================---------------------*/
+
+
+@media screen and (max-width: 1200px) {
+
+    
+.container-grid {
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 100px 100px;
+}
+    .boxmain {
+        display: flex;
+        flex-direction: column;
+    }
+    .right {width: 100%;}
+    .left {width: 100%;}
+
+}
