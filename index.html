@@ -31,17 +31,26 @@
         <label for="">Select Tip %</label>
 
 <div class="container-grid">
-  <div class="item" onclick="setTip(5)">5%</div>
-  <div class="item" onclick="setTip(10)">10%</div>
-  <div class="item" onclick="setTip(15)">15%</div>
-  <div class="item" onclick="setTip(25)">25%</div>
-  <div class="item" onclick="setTip(50)">50%</div>
-  <div class="item custom" onclick="customTip()">Custom</div>
+  <div class="item" onclick="setTip(5); toggleoff()">5%</div>
+  <div class="item" onclick="setTip(10); toggleoff()">10%</div>
+  <div class="item" onclick="setTip(15); toggleoff()">15%</div>
+  <div class="item" onclick="setTip(25); toggleoff()">25%</div>
+  <div class="item" onclick="setTip(50); toggleoff()">50%</div>
+  <div class="item custom" onclick="toggleon()">Custom</div>
+
   
 </div>
+
+  <div class="customTip">
+<label for="">Custom Tip%: <small>Non-functional.</small></label>
+<br>
+<input type="text" name="" id="bill" placeholder="%0">
+<br>
+</div>
+
       <label for="">Number of people</label>
       <br>
-      <input type="text" name="" id="numpeople" placeholder="0">
+      <input type="number" name="" id="numpeople" placeholder="0">
 
 
 
